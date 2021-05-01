@@ -6,60 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zhiyuan's Chinese Ching Chong</title>
     <meta name="description" content="Basically learn Chinese IDK">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="real.css">
     <script src="script.js"></script>
 </head>
 
 <body>
 	<header>
-		<div id="logo"><img src="sprig.png"  alt="logo"/>Your Chinese Learning A1!</div>
+		<img src="sprig.png"  alt="logo" class="logo"/>
+		<input type="checkbox" class="nav-toggle" id="nav-toggle"/>
 		<nav>
-			<ul>
+		  	<ul>
 				<li><a href="https://docs.google.com/document/d/1iH-0JHXOSWN60CX006yBVD2h-Yp9JmkW_js1PaJBj8Q/edit">Vocabulary</a>
 				<li><a href="https://docs.google.com/document/d/1-616Y46n7Mx96UdkgAN56O7pE6nxg1eQB86e8v1p2LU/edit?ouid=115782684187473348056&usp=docs_home&ths=true">Reviews & Practices</a>
 			</ul>
 		</nav>
+		<label for="nav-toggle" class="nav-toggle-label">
+			<span></span>
+		   </label>
 	</header>
-	<section>
-		<strong>This is a simple website for the purpose of guiding you to A1 Chinese!</strong>
-	</section>
-	<section id="pageContent">
-		<main role="main">
-			<article>
-				<h2><a href="https://docs.google.com/document/d/1Y73wGid6r63kFzqF7FdKoMH7FB9-QSfiesSZDee6Kzo/edit">Lesson 1</a></h2>
-			</article>
-			<article>
-				<h2><a href="https://docs.google.com/document/d/1BFOWjFQaTWIhptCjc4Tu5qr9PFocu7lG96EskeRZew8/edit?ouid=115782684187473348056&usp=docs_home&ths=true">Lesson 2</a></h2>
-			</article>
-			<article>
-				<h2><a href="https://docs.google.com/document/d/1M4xEgDuoy7W6Aa5cTjU7--eFkrNerQ8r-xQQLwHYNuM/edit">Lesson 3</a></h2>
-			</article>
-			<article>
-				<h2><a href="https://docs.google.com/document/d/1G8Ibl7NeIrSLzfRHF7G8J_NGGCmfa8BiKD48pR-vRnw/edit?ouid=115782684187473348056&usp=docs_home&ths=true">Lesson 4</a></h2>			</article>
-						<article>
-				<h2><a href="https://docs.google.com/document/d/1l0nRNPQB5shd_xGcqyj7S4Nwzt3JRGl6caBCSfNvZLE/edit"> Lesson 5</a></h2>
-			</article>
-			<article>
-				<h2><a href="https://docs.google.com/document/d/1nxK2FB9j5mOnmz462tKjyJ9jcDZYAfZu43h8BNUEpTk/edit">Lesson 6</a></h2>			</article>
-			</article>
-			<article>
-				<h2><a href="https://docs.google.com/document/d/1C0AsZ9LYDgwfTNJ5StDIlQwcjr4R1dy12FTvKeN4_FE/edit">Lesson 7</a></h2>
-			</article>
-			<article>
-				<h2><a href="https://docs.google.com/document/d/1NtfiPP7QXeKV_bT2vX6OUkHOFsT9zNZt_qJpsGkgwD8/edit">Lesson 8</a></h2>
-			</article>
-			<article>
-				<h2><a href="https://docs.google.com/document/d/1UDr51q2BJy2OB1ATCX87DNV_2FclAN_7y7J-7lrcc9g/edit">Lesson 9</a></h2>
-			</article>
-		</main>
-		<aside>
-			<div><img src="chinese.jpg" height="300" width="300" alt="A Chinese Image"/> </div>
-		</aside>
-	</section>
+	
+	<div class="links">
+		
+			<div class="flexbox-container">
+				<div class="flexbox-item flexbox-item-1">Lesson 1</div>
+				<button a href="https://docs.google.com/document/d/1Y73wGid6r63kFzqF7FdKoMH7FB9-QSfiesSZDee6Kzo/edit " class="flexbox-item flexbox-item-2">Start Lesson</button>
+			</div>
+			<div class="flexbox-container">
+				<div class="flexbox-item flexbox-item-1">Lesson 2</div>
+				<button a href="https://docs.google.com/document/d/1BFOWjFQaTWIhptCjc4Tu5qr9PFocu7lG96EskeRZew8/edit?ouid=115782684187473348056&usp=docs_home&ths=true " class="flexbox-item flexbox-item-2">Start Lesson</button>
+			</div>
+			<div class="flexbox-container">
+				<div class="flexbox-item flexbox-item-1">Lesson 3</div>
+				<button a href="https://docs.google.com/document/d/1M4xEgDuoy7W6Aa5cTjU7--eFkrNerQ8r-xQQLwHYNuM/edit " class="flexbox-item flexbox-item-2">Start Lesson</button>
+			</div>
+			<div class="flexbox-container">
+				<div class="flexbox-item flexbox-item-1">Lesson 4</div>
+				<button a href="https://docs.google.com/document/d/1G8Ibl7NeIrSLzfRHF7G8J_NGGCmfa8BiKD48pR-vRnw/edit?ouid=115782684187473348056&usp=docs_home&ths=true " class="flexbox-item flexbox-item-2">Start Lesson</button>
+			</div>
+			<div class="flexbox-container">
+				<div class="flexbox-item flexbox-item-1">Lesson 5</div>
+				<button a href="https://docs.google.com/document/d/1l0nRNPQB5shd_xGcqyj7S4Nwzt3JRGl6caBCSfNvZLE/edit " class="flexbox-item flexbox-item-2">Start Lesson</button>
+			</div>
+			<div class="flexbox-container">
+				<div class="flexbox-item flexbox-item-1">Lesson 6</div>
+				<button a href="https://docs.google.com/document/d/1nxK2FB9j5mOnmz462tKjyJ9jcDZYAfZu43h8BNUEpTk/edit">Start Lesson</button>
+			</div>
+			<div class="flexbox-container">
+				<div class="flexbox-item flexbox-item-1">Lesson 7</div>
+				<button a href="https://docs.google.com/document/d/1C0AsZ9LYDgwfTNJ5StDIlQwcjr4R1dy12FTvKeN4_FE/edit" class="flexbox-item flexbox-item-2">Start Lesson</button>
+			</div>
+			<div class="flexbox-container">
+				<div class="flexbox-item flexbox-item-1">Lesson 8</div>
+				<button a href="https://docs.google.com/document/d/1NtfiPP7QXeKV_bT2vX6OUkHOFsT9zNZt_qJpsGkgwD8/edit">Start Lesson</button>
+			</div>
+			<div class="flexbox-container">
+				<div class="flexbox-item flexbox-item-1">Lesson 9</div>
+				<button a href="https://docs.google.com/document/d/1UDr51q2BJy2OB1ATCX87DNV_2FclAN_7y7J-7lrcc9g/edit">Start Lesson</button>
+			</div>
+				 
+        	
+		
+		</div>
 	<footer>
-		<p>Contact Zhiyuan: | <a href="https://www.youtube.com/zhiyuanliuviolin" target="_blank" rel="nofollow">My Youtube Channel</a></p>
+		<p class="footer-stuff">Contact Zhiyuan:  <a href="https://www.youtube.com/zhiyuanliuviolin" target="_blank" rel="nofollow">YT</a></p>
 
 	</footer>
+	
 
 
 </body>

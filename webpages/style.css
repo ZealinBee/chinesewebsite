@@ -1,0 +1,287 @@
+*,
+*::before,
+*::after {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    hsl(90, 100%, 79%),
+    hsl(90, 100%, 91%)
+  );
+}
+body {
+  background: url(background.jpg);
+}
+
+.back img {
+  width: 70px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+header {
+  background: linear-gradient(to right, rgb(75, 207, 75), rgb(58, 171, 223));
+  position: relative;
+  text-align: center;
+}
+
+nav {
+  position: absolute;
+  background: linear-gradient(to right, rgb(75, 207, 75), rgb(58, 171, 223));
+  width: 100%;
+  left: 0;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+nav li {
+  margin: auto auto 1em 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.menu {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: rgb(58, 171, 223);
+  font-size: 1.8em;
+}
+
+.sub {
+  flex-direction: column;
+  display: flex;
+}
+
+.sub a {
+  margin-top: 1.3em;
+  text-decoration: none;
+  font-size: 0.7em;
+  text-align: center;
+  color: black;
+  background: rgb(102, 253, 114);
+  padding: 0.2em 6em;
+  border-radius: 0.7em;
+}
+
+.sub a:hover {
+  box-shadow: -1px 0px 22px rgba(22, 4, 4, 0.5);
+  transform: scale(1.1, 1.1);
+}
+
+footer {
+  background: linear-gradient(to right, rgb(75, 207, 75), rgb(58, 171, 223));
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 1em 0 1em 0;
+  overflow: hidden;
+  width: 100%;
+  bottom: 0;
+  margin-top: 3em;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+.logo {
+  width: 60px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 2em;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: rgb(241, 238, 238);
+  height: 2px;
+  width: 1.5em;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 7px;
+  background: black;
+  width: 1.5em;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+  background: black;
+  width: 1.5em;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+caption {
+  text-align: center;
+  color: rgb(58, 171, 223);
+  font-size: 1.8em;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 8px #000000;
+  background: hsl(0, 0%, 13%);
+  border-collapse: collapse;
+  position: relative;
+  margin-top: 3em;
+}
+
+tr,
+td {
+  padding: 0.5em 2em;
+  color: hsl(0, 0%, 82%);
+}
+
+th {
+  background: hsl(0, 0%, 22%);
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgb(102, 253, 114);
+  padding: 0.5em 0 0.5em 2em;
+  position: relative;
+}
+
+tr {
+}
+
+tr:hover {
+  cursor: pointer;
+  background: hsl(0, 0%, 22%);
+}
+
+tr::before {
+  content: "";
+  height: 0.5px;
+  background: hsl(0, 0%, 10%);
+  position: absolute;
+  width: 100%;
+  bottom: 1;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1000px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(1000px, 1fr) 1fr;
+  }
+
+  .logo {
+    grid-column: 2/3;
+  }
+
+  nav {
+    grid-column: 3/4;
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex;
+    margin-top: 1em;
+  }
+  nav a:hover {
+    color: white;
+  }
+
+  nav a::before {
+    content: "";
+    background-color: white;
+    width: 0%;
+    height: 2px;
+    display: block;
+    transition: all ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+
+  .sub {
+    flex-direction: row;
+  }
+
+  .sub a {
+    margin-right: 1em;
+    padding: 0.3em 3em;
+  }
+}
